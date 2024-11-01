@@ -32,11 +32,12 @@ header ul button{
     border: none;
 }
 /* CSS Header section*/
-section{
-    height: 350px;
-}
+
+
 header section{
     background-color: #ffc017;
+    height: 350px;
+    position: relative
 }
 header section h1{
     font-family: "Spectral", serif;
@@ -44,7 +45,7 @@ header section h1{
 }
 
 header section p{
-    color: #181919;
+    color: #292929;
 }
 
 header section button{
@@ -54,13 +55,51 @@ header section button{
     border: none;
     padding: 0 2rem;
     height: 30px;
-    align-self: start;
+    
 
 }
 #contenitore{
     float: left;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 6rem;
     height: 100%;
+
+}
+svg{
+    position: absolute;
+    top: 0;
+    right: -70px;
+
+}
+/*CSS Main-section*/
+main{
+    font-family: "Roboto", sans-serif
+}
+main section{
+    width: 40%;
+}
+
+#titoloSection{
+    display: flex;
+    align-items: center;
+    margin-left: 4.5rem;
+}
+#titoloSection p {
+    font-weight: 700;
+
+}
+#nome{
+    display: flex;
+    align-items: center;
+    
+}
+
+#section img {
+    border-radius: 50%;
+}
+#descrizione{
 
 }
