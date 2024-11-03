@@ -14,13 +14,18 @@ header a {
 header li {
   padding: 0 1em;
 }
-nav {
+#firstNav {
   background-color: #ffc017;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 5em;
   border-bottom: 1px solid #292929;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
 }
 header ul button {
   padding: 0 1rem;
@@ -33,10 +38,13 @@ header ul button {
 }
 /* CSS Header section*/
 
+
 header section {
   background-color: #ffc017;
   height: 350px;
-  position: relative;
+  display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
 }
 header section h1 {
   font-family: "Spectral", serif;
@@ -56,7 +64,7 @@ header section button {
   height: 30px;
 }
 #contenitore {
-  float: left;
+  
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -65,11 +73,11 @@ header section button {
   height: 100%;
 }
 svg {
-  position: absolute;
-  top: 0;
-  right: -70px;
+  margin-right: -60px;
 }
 /*CSS Main-section*/
+
+
 main {
   font-family: "Roboto", sans-serif;
 }
@@ -97,8 +105,8 @@ main section {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 80%;
-
+  width: 90%;
+  justify-content: space-around;
 }
 #nome img {
   border-radius: 50%;
@@ -112,14 +120,129 @@ main section {
   margin-left: 0.5rem;
 }
 section span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 1.8rem;
-    opacity: 20%;
-    transform: translate(-45px, 4px);
-    font-weight: 700;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.8rem;
+  opacity: 20%;
+  transform: translate(-45px, 4px);
+  font-weight: 700;
 }
 #descrizione {
+  margin-top: 0.7rem;
 }
+
+/*CSS main article*/
+
+article{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    
+    margin-top: 2rem;
+
+}
+#displayFlex{
+  display: flex;
+}
+
+#article{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contenuto{
+  width: 85%;
+}
+
+.nome2{
+    display: flex;
+    align-items: center;
+}
+.dateArticle{
+    display: flex;
+    justify-content: space-between;
+}
+.imgBig{
+    width: 30%;
+    
+    align-self: center;
+    margin-left: 1rem;
+}
+   .imgSmall{
+    border-radius: 50%;
+    width: 5%;
+
+   }
+   article h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+
+   }
+   article h5{
+    color: #757575;
+    margin: 0.4rem 0;
+
+   }
+   article h6{
+    color: #757575
+   }
+   article span{
+    background-color: #F2F3F3;
+    border-radius: 20px;
+    padding: 0 0.4rem;
+}
+   /*CSS link right*/
+
+   #secondNav{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+    width: 80%;
+    justify-content: space-between;
+}
+    
+   
+   #secondNav a {
+    color: #757575;
+    text-decoration: none;
+    border: 0.5px solid #E6E7E7;
+    padding: 0.4rem;
+    margin: 0.3rem;
+    
+}
+#terzoNav a {
+  color: #757575;
+    text-decoration: none;
+    margin: 0.2rem;
+
+}
+   #displayFlex2{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    
+    align-items: center;
+    justify-content: space-evenly;
+
+   }
+   #displayFlex2 p{
+    font-weight: bold;
+    margin-right: 4.5rem;
+
+   }
+  hr{
+    width: 70%;
+   }
+   #terzoNav{
+    font-size: 1.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    
+
+
+   }
